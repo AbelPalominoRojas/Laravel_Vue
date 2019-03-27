@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home/{path}',"HomeController@index")->where( 'path', '([A-z0-9-\/_.]+)?');
+
+
+Route::resource('categoria', 'CategoriaController');
+

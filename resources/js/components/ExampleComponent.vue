@@ -25,7 +25,8 @@
         data(){
             return {
                 mensaje:'',
-                lenguajes:['PHP', 'JS', 'Java', 'Dart']
+                lenguajes:['PHP', 'JS', 'Java', 'Dart'],
+                lenguaje:''
             }
         },
         mounted() {
